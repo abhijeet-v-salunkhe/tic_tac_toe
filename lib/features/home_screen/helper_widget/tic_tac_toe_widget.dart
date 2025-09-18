@@ -20,6 +20,7 @@ class TicTacToeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      padding: EdgeInsets.all(10.h),
       child: Column(
         spacing: 10.h,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -50,7 +51,6 @@ class TicTacToeWidget extends StatelessWidget {
           ),
           GridView.builder(
             shrinkWrap: true,
-            padding: EdgeInsetsGeometry.all(10.h),
             itemCount: 9,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
